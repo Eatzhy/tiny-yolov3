@@ -2,6 +2,7 @@
 使用tiny——yolov3（keras）检测自己的数据集，三类目标
 
 程序是根据github上yolov3修改的，所以大面积重复，使用tiny-yolo用法如下：
+
 1、下载tiny-yolov3工程，打开yolo.docx文档，按照文档中的教程对自己的
 图像集做标注，并生成一些必须的图像路径txt文件。
 
