@@ -1,0 +1,5 @@
+/home/zhangyang/yolo/VOC2007/JPEGImages/00026.jpg 8,349,62,403,1
+/home/zhangyang/yolo/VOC2007/JPEGImages/00045.jpg 108,13,213,106,2
+/home/zhangyang/yolo/VOC2007/JPEGImages/00013.jpg 218,406,474,503,0
+/home/zhangyang/yolo/VOC2007/JPEGImages/00012.jpg 203,139,508,337,0
+/home/zhangyang/yolo/VOC2007/JPEGImages/00053.jpg 277,393,387,508,2

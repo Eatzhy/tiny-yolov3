@@ -1,0 +1,1 @@
+/home/zhangyang/yolo/VOC2007/JPEGImages/00032.jpg 18,152,74,208,1
