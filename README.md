@@ -14,3 +14,6 @@ yolo_test_batch.py
 然后会在VOC/SegmentationClass生成检测后的结果
 
 我的程序是在ubantu下跑的，当然改一下路径之类的就可以在windows下测试啦
+
+有问题欢迎讨论，加微信
+![微信扫一扫](https://github.com/Eatzhy/tiny-yolov3/blob/master/IMG_5707.JPG)
