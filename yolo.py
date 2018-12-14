@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-改自yolov3-keras
+Class definition of YOLO_v3 style detection model on image and video
 """
 
 import colorsys
@@ -10,22 +10,21 @@ import numpy as np
 from keras import backend as K
 from keras.models import load_model
 from keras.layers import Input
-from PIL import ImageFont, ImageDraw
+from PIL import Image, ImageFont, ImageDraw
 from yolo3.tinymodel import yolo_eval, yolo_body, tiny_yolo_body
 from yolo3.utils import letterbox_image
 from keras.utils import multi_gpu_model
 
 class YOLO(object):
     _defaults = {
-        "model_path": 'logs/trained_weights.h5',
+        "model_path": 'logs/best_weights.h5',
         "anchors_path": 'model_data/tiny_yolo_anchors.txt',
         "classes_path": 'model_data/voc_classes.txt',
         "score" : 0.3,
-        "iou" : 0.45,
+        "iou" : 0.25,
         "model_image_size" : (416, 416),
         "gpu_num" : 1,
     }
-
 
     @classmethod
     def get_defaults(cls, n):
@@ -170,6 +169,3 @@ class YOLO(object):
 
     def close_session(self):
         self.sess.close()
-
-
-
