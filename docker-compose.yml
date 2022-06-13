@@ -1,0 +1,32 @@
+version: "3.9"
+ 
+services:
+ # db:
+ #   image: postgres
+ #   volumes:
+ #     - ./data/db:/var/lib/postgresql/data
+ #   environment:
+ #     - POSTGRES_NAME=postgres
+ #     - POSTGRES_USER=postgres
+ #     - POSTGRES_PASSWORD=postgres
+ web:
+   build: .
+   image: tiny-yolo:v1
+   command: jupyter notebook --ip 0.0.0.0 --port 8885 --allow-root
+   volumes:
+     - .:/app
+   ports:
+     - "8885:8885" # jupyter
+#   environment:
+#     - POSTGRES_NAME=postgres
+#     - POSTGRES_USER=postgres
+#     - POSTGRES_PASSWORD=postgres
+#   depends_on:
+#     - db
+
+
+# docker-compose up
+# docker-compose up --build
+# docker-compose up --no-build
+
+ 
